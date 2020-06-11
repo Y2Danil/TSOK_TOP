@@ -15,7 +15,7 @@
   {% if Articles %}
     {% for Article in Articles %}
             <article class='Article col-10 col-sm-10 col-md-5 col-lg-3 col-xl-3'>
-              <div clas='scale div_img'>
+              <div clas='scale div_img pr-auto'>
                 <img src="{{ Article.image.url }}" alt="Картинка" class='article_img scale col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
               </div>
               <h2 class='article_title'><a href='{% url "blog:detail" Article.id %}' class='article_title'>{{ Article.title }}</a></h2>
