@@ -20,7 +20,6 @@
               </div>
               <h2 class='article_title'><a href='{% url "blog:detail" Article.id %}' class='article_title'>{{ Article.title }}</a></h2>
               <p>{{ Article.published_date|date:"d.m.Y" }}</p>
-              <p class='author_create'>Автор идеи: <span>{{ Article.create_author }}</span></p>
               <p><a href="#">Рубрика: {{ Article.rubric.name }}</a></p>
             </article>
     {% endfor %}

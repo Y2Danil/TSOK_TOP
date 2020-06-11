@@ -101,20 +101,20 @@ ul .nav-item {
 
 @media (min-width: 540px) {
   .article_img {
-    height: 200px
+    height: 300px;
   }
 
   .Article {
-    height: 400px
+    height: 1000px;
   }
 }
 
 @media (min-width: 768px) {
         .article_img {
-            height: 200px
+            height: 200px;
         }
         .Article {
-          height: 400px
+          height: 800px;
         }
         .form_poisck {
           margin-top: 10px !important;
@@ -123,7 +123,8 @@ ul .nav-item {
 
     @media (min-width: 992px) {
         .article_img {
-            height: 200px
+            height: 200px;
+            width: auto;
         }
         .Article {
           height: 400px
