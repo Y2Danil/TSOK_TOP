@@ -22,12 +22,6 @@
               <p>{{ Article.published_date|date:"d.m.Y" }}</p>
               <p class='author_create'>Автор идеи: <span>{{ Article.create_author }}</span></p>
               <p><a href="#">Рубрика: {{ Article.rubric.name }}</a></p>
-              <form action="{% url 'blog:likes' %}" method="post">
-                <p name='likes'>
-                  {{ Article.likes }}
-                </p>
-                <button type="submit">0</button>
-              </form>
             </article>
     {% endfor %}
   {% else %}
