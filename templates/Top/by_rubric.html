@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Главное - {{ current_rubric.name }}{% endblock %}
+
+{% block content %}
+<section class='container'>
+<div class='row row-article'>
+{% for Article in Articles %}
+<article class='Article col-10 col-sm-10 col-md-5 col-lg-4 col-xl-4'>
+  <div clas='scale div_img'>
+    <img src="{{ Article.image.url }}" alt="Картинка"
+      class='article_img scale col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+  </div>
+  <h2 class='article_title'><a href='{% url "blog:detail" Article.id %}' class='article_title'>{{ Article.title }}</a>
+  </h2>
+  <p>{{ Article.published_date }}</p>
+  <p class='author_create'>Автор идеи: <span>{{ Article.create_author }}</span></p>
+  <p><a href="#">Рубрика: {{ Article.rubric.name }}</a></p>
+</article>
+{% endfor %}
+</div>
+</section>
+{% endblock %}
