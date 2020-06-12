@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 SECRET_KEY = 'h5$v6akt2m#)i(rysv&zml3pb96di_*r&=yl4swo)=6t^2g3fo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
