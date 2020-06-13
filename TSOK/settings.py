@@ -70,9 +70,9 @@ WSGI_APPLICATION = 'TSOK.wsgi.application'
 DATABASES = {
     'default': {
         'NAME': 'TSOK',
-        'ENGINE': 'django.db.backends.mysql',
-        'USER': 'root',
-        'PASSWORD': '2016-2005',
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'postgres',
+        'PASSWORD': 'WER2005!',
         'HOST': 'localhost',
     }
 }
