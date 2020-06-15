@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 SECRET_KEY = 'h5$v6akt2m#)i(rysv&zml3pb96di_*r&=yl4swo)=6t^2g3fo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'TSOK.wsgi.application'
 
 DATABASES = {
     'default': {
-        'NAME': 'TSOK',
+        'NAME': 'TSOK v1.1',
         'ENGINE': 'django.db.backends.postgresql',
         'USER': 'postgres',
         'PASSWORD': 'WER2005!',
@@ -115,15 +115,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'django.contrib.staticfiles.finders.DefaultStorageFinder',
-)
-
 # static
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(HOME_ROOT, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # end static
 
 # media
